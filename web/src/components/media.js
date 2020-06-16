@@ -4,7 +4,6 @@ import Video from "./video"
 import Figure from "./figure"
 
 const Media = ({ data }) => {
-  console.log(data)
   if (data.length === 0) {
     return null
   }
@@ -12,10 +11,8 @@ const Media = ({ data }) => {
     return <Gallery slides={data} />
   }
   const singleAsset = data[0]
-  return data.length > 1 ? (
-    <Gallery />
-  ) : singleAsset.__typename === "SanityVideoEmbed" ? (
-    <Video data={singleAsset} />
+  return singleAsset.__typename === "SanityVideoEmbed" ? (
+    <Video {...singleAsset} />
   ) : (
     <Figure image={singleAsset} />
   )

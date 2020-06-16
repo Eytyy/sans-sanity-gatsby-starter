@@ -27,12 +27,9 @@ export default {
       type: "file",
     },
     {
-      title: "Media",
-      name: "media",
-      type: "string",
-      options: {
-        list: ["all and (max-width:768px)", "all and (min-width:769px)"],
-      },
+      name: "url",
+      title: "Url",
+      type: "url",
     },
   ],
 };

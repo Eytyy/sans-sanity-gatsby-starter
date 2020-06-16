@@ -49,13 +49,6 @@ export default {
       fieldset: "settings",
     },
     {
-      name: "controls",
-      title: "Controls",
-      description: "Show controls like play/pause etc",
-      type: "boolean",
-      fieldset: "settings",
-    },
-    {
       name: "loop",
       title: "Loop",
       type: "boolean",
@@ -94,25 +87,20 @@ export default {
       },
     },
     {
-      name: "versions",
-      title: "Videos (versions)",
+      name: "video",
+      title: "Video",
       description: (
         <span>
-          Order them by priority.{" "}
+          You can either use a url, or upload a video.
+          <br />
+          For file uploads
           <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats">
-            Recomended types
+            recomended types
           </a>{" "}
           are Priciwebm and mp4
         </span>
       ),
-      type: "array",
-      of: [
-        {
-          name: "video",
-          title: "Video",
-          type: "video",
-        },
-      ],
+      type: "video",
     },
   ],
 };

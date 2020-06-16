@@ -2,7 +2,6 @@ import React from "react"
 
 const BlogPost = props => {
   const { title, _rawBody } = props
-  console.log(props)
   return (
     <article>
       <header>

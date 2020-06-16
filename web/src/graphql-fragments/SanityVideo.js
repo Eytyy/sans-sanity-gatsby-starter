@@ -2,22 +2,22 @@ import { graphql } from "gatsby"
 
 export const SanityVideoEmbed = graphql`
   fragment SanityVideoEmbed on SanityVideoEmbed {
+    _key
     title
     posterFrame {
       ...SanityFigure
     }
     muted
-    controls
     loop
     preload
     autoplay
-    versions {
-      media
+    video {
       file {
         asset {
           url
         }
       }
+      url
     }
   }
 `

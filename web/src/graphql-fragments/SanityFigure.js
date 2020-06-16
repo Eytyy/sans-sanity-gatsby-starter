@@ -2,6 +2,7 @@ import { graphql } from "gatsby"
 
 export const SanityFigure = graphql`
   fragment SanityFigure on SanityFigure {
+    _key
     alt
     crop {
       _key
