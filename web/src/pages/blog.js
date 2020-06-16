@@ -3,7 +3,8 @@ import { graphql, Link } from "gatsby"
 
 import GraphQLErrorList from "../components/graphql-error-list"
 import SEO from "../components/seo"
-import { Grid } from "../components/layout.styles"
+import { Grid } from "../styles/layout"
+import { H2 } from "../styles/typography"
 
 export const query = graphql`
   query blogQuery {
@@ -36,7 +37,7 @@ const Blog = props => {
         {posts.map(post => (
           <div key={post._id}>
             <Link to={post.slug.current}>
-              <h2>{post.title}</h2>
+              <H2>{post.title}</H2>
             </Link>
           </div>
         ))}

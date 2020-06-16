@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Global from "../styles/Global.js"
-import { LayoutWrapper } from "./layout.styles"
+import { LayoutWrapper } from "../styles/layout"
 
 import Header from "./header"
 

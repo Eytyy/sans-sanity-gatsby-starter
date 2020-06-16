@@ -1,6 +1,7 @@
 import React from "react"
 import { css } from "@emotion/core"
 import { Link } from "gatsby"
+import { H2 } from "../styles/typography"
 
 const getInternalLinkPath = ({ _type, slug }) => {
   let basePath
@@ -35,7 +36,7 @@ const ContentList = ({ content }) => {
               slug: block.slug.current,
             })}
           >
-            <h2>{block.title}</h2>
+            <H2>{block.title}</H2>
           </Link>
         </div>
       ))}

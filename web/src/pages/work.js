@@ -3,7 +3,8 @@ import { graphql, Link } from "gatsby"
 
 import GraphQLErrorList from "../components/graphql-error-list"
 import SEO from "../components/seo"
-import { Grid } from "../components/layout.styles"
+import { Grid } from "../styles/layout"
+import { H2 } from "../styles/typography"
 
 export const query = graphql`
   query projectsQuery {
@@ -34,7 +35,7 @@ const Work = props => {
         {projects.map(project => (
           <div key={project._id}>
             <Link to={project.slug.current}>
-              <h2>{project.title}</h2>
+              <H2>{project.title}</H2>
             </Link>
           </div>
         ))}

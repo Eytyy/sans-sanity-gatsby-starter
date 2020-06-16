@@ -10,3 +10,7 @@ export const LayoutWrapper = styled.div`
   max-width: 960px;
   margin: 0 auto;
 `
+
+export const PageHeader = styled.header`
+  margin-bottom: 2em;
+`

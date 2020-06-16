@@ -1,5 +1,4 @@
 export const fonts = {
-  title: "GT Sectra Display",
   bold: "GT Esti Bold",
   regular: "GT Esti Thin",
 }
