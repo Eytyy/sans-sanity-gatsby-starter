@@ -1,6 +1,27 @@
 export default {
   widgets: [
     {
+      name: "netlify",
+      options: {
+        title: "My Netlify Deploys",
+        sites: [
+          {
+            title: "Sanity Studio",
+            apiID: "",
+            buildHookId: "",
+            name: "",
+          },
+
+          {
+            title: "Website",
+            apiID: "",
+            buildHookId: "",
+            name: "",
+          },
+        ],
+      },
+    },
+    {
       name: "document-list",
       options: {
         title: "Last edited documents",
