@@ -4,20 +4,20 @@ export default {
       name: "netlify",
       options: {
         title: "My Netlify Deploys",
+        description:
+          "NOTE: Because these sites are static builds, they need to be re-deployed to see the changes when documents are published.",
         sites: [
           {
             title: "Sanity Studio",
-            apiID: "ce43f59a-de26-42eb-a989-d3d232047533",
-            buildHookId:
-              "https://api.netlify.com/build_hooks/5eea9237e7f53a019d810bbf",
+            apiId: "ce43f59a-de26-42eb-a989-d3d232047533",
+            buildHookId: "5eea9237e7f53a019d810bbf",
             name: "sans-sanity-gatsby-starter",
           },
 
           {
             title: "Website",
-            apiID: "7ccf7f28-2ee8-4929-bcf7-55257f4cb523",
-            buildHookId:
-              "https://api.netlify.com/build_hooks/5eeac2a7a9c61b6880096bab",
+            apiId: "7ccf7f28-2ee8-4929-bcf7-55257f4cb523",
+            buildHookId: "5eeac2a7a9c61b6880096bab",
             name: "sans-sanity-gatsby-starter-web",
           },
         ],
