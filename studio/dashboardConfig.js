@@ -24,36 +24,16 @@ export default {
       },
     },
     {
-      name: "document-list",
-      options: {
-        title: "Last edited documents",
-        order: "_updatedAt desc",
-        types: ["post", "project"],
-      },
-      layout: {
-        width: "auto",
-        height: "large",
-      },
-    },
-    {
-      name: "document-list",
-      options: {
-        title: "Last edited posts",
-        order: "_updatedAt desc",
-        types: ["post"],
-      },
-    },
-    {
       name: "project-info",
       layout: {
-        width: "large",
+        width: "medium",
         height: "small",
       },
     },
     {
       name: "project-users",
       layout: {
-        width: "medium",
+        width: "small",
         height: "small",
       },
     },

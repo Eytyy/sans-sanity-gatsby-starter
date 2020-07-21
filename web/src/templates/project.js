@@ -9,7 +9,7 @@ export const query = graphql`
     project: sanityProject(id: { eq: $id }) {
       id
       title
-      _rawBody(resolveReferences: { maxDepth: 10 })
+      _rawDescription(resolveReferences: { maxDepth: 10 })
       mainMedia {
         ... on SanityVideoEmbed {
           ...SanityVideoEmbed

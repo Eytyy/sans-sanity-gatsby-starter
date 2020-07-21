@@ -12,7 +12,6 @@ export const query = graphql`
       nodes {
         _id
         title
-        _rawBody
         slug {
           current
         }
